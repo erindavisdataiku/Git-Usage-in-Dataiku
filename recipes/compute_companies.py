@@ -32,6 +32,7 @@ customers_companies = pro_customers_sql.get_dataframe(columns=['company'])
 companies = dataiku.Dataset("companies")
 companies_df = customers_companies.copy()
 
+#making another change to test if PR updates
 # For each company name, find the corresponding stock symbol
 symbols = []
 for company in companies_df['company']:
