@@ -64,7 +64,8 @@
   },
   "schema": {
     "columns": [
-      {"name":"company","type":"string"}
+      {"name":"company","type":"string"},
+      {"name":"symbol","type":"string"}
     ],
     "userModified": false
   },
