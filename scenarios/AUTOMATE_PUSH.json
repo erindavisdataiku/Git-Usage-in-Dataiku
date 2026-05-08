@@ -1,7 +1,7 @@
 {
   "type": "step_based",
   "name": "Automate_Push",
-  "active": false,
+  "active": true,
   "checklists": {
     "checklists": []
   },
@@ -20,7 +20,7 @@
       "active": true,
       "params": {
         "repeatFrequency": 1,
-        "frequency": "Hourly",
+        "frequency": "Minutely",
         "startingFrom": "2026-05-08",
         "daysOfWeek": [
           "Friday"
@@ -28,7 +28,7 @@
         "minute": 37,
         "hour": 14,
         "timezone": "SERVER",
-        "lastUpdate": 1778265739637
+        "lastUpdate": 1778265756807
       }
     }
   ],
