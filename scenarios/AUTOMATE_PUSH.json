@@ -28,7 +28,7 @@
         "minute": 37,
         "hour": 14,
         "timezone": "SERVER",
-        "lastUpdate": 1778265637628
+        "lastUpdate": 1778265739637
       }
     }
   ],
@@ -51,7 +51,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "script": "import dataiku\n\nclient \u003d dataiku.api_client()\n\nproject \u003d client.get_default_project()\n\nproject_git \u003d project.get_project_git()\n\nproject_git.push()",
+          "script": "import dataiku\n\nclient \u003d dataiku.api_client()\n\nproject \u003d client.get_default_project()\n\nproject_git \u003d project.get_project_git()\n\nproject_git.fetch()\n\nproject_git.push()",
           "envSelection": {
             "envMode": "INHERIT"
           },
