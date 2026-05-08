@@ -28,13 +28,37 @@
         "minute": 37,
         "hour": 14,
         "timezone": "SERVER",
-        "lastUpdate": 1778265436997
+        "lastUpdate": 1778265637628
       }
     }
   ],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "custom_python_mNhWQd3c1AnQ5IzCRNduhA",
+        "type": "custom_python",
+        "name": "Step #1",
+        "enabled": true,
+        "alwaysShowComment": false,
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "script": "import dataiku\n\nclient \u003d dataiku.api_client()\n\nproject \u003d client.get_default_project()\n\nproject_git \u003d project.get_project_git()\n\nproject_git.push()",
+          "envSelection": {
+            "envMode": "INHERIT"
+          },
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {},
