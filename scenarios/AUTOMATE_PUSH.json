@@ -1,7 +1,7 @@
 {
   "type": "step_based",
   "name": "Automate_Push",
-  "active": true,
+  "active": false,
   "checklists": {
     "checklists": []
   },
@@ -28,7 +28,7 @@
         "minute": 37,
         "hour": 14,
         "timezone": "SERVER",
-        "lastUpdate": 1778265756807
+        "lastUpdate": 1778265786560
       }
     }
   ],
